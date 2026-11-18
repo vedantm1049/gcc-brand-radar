@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GCC Brand Radar: 15 homegrown brands worth a look, Nov 2026</title>
+<meta name="description" content="A ranked watchlist of GCC-founded beauty, personal care and wellness brands, screened on public signals. Snapshot 16 Nov 2026.">
+<meta property="og:title" content="GCC Brand Radar: 15 homegrown brands worth a look">
+<meta property="og:description" content="47 brands reviewed, 15 ranked on social momentum, retail reach, portfolio fit and how much capital has gone in. Public data, Nov 2026.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fff;--ink:#16222c;--slate:#5d6670;--line:#e3e0d8;--sand:#eee7d8;--palm:#2f5d4e;--palm-l:#dfe9e4;--amber:#b9700f}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Archivo,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.55;font-variation-settings:"wdth" 100}
+.wrap{max-width:1040px;margin:0 auto;padding:36px 22px 72px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--palm);outline-offset:2px;border-radius:3px}
+.cond{font-variation-settings:"wdth" 75}
+.num{font-variant-numeric:tabular-nums}
+.muted{color:var(--slate)}
+.dateline{font-size:14px;color:var(--slate);margin:0}
+h1{font-variation-settings:"wdth" 75;font-weight:780;font-size:clamp(34px,6vw,58px);line-height:1;letter-spacing:-.01em;margin:10px 0 14px;max-width:16ch}
+.lede{font-size:18px;max-width:62ch;margin:0;color:#2d3a44}
+h2{font-variation-settings:"wdth" 80;font-weight:740;font-size:26px;line-height:1.15;margin:56px 0 6px}
+.intro{margin:0 0 18px;color:var(--slate);max-width:64ch;font-size:15px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,0.85fr) minmax(0,1.15fr);gap:36px;margin-top:30px;align-items:start}
+.top3 h3{font-size:15px;font-weight:600;margin:0 0 10px;color:var(--slate)}
+.top3 ol{list-style:none;margin:0;padding:0;counter-reset:t}
+.top3 li{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+.top3 li:last-child{border-bottom:1px solid var(--line)}
+.top3 .sc{font-variation-settings:"wdth" 70;font-weight:800;font-size:40px;line-height:.9;color:var(--palm)}
+.top3 b{display:block;font-size:17px}
+.top3 span{font-size:14.5px;color:#36434d}
+.chartbox figcaption{font-size:13px;color:var(--slate);margin-top:6px}
+svg text{font-family:inherit}
+.q-label{font-size:14px;font-weight:600;fill:var(--slate)}
+.q-good{fill:var(--palm)}
+.dot{fill:var(--ink)}
+.dot.top{fill:var(--palm)}
+.dlabel{font-size:15px;font-weight:600;fill:var(--ink)}
+
+/* findings */
+.finds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;margin-top:6px}
+.find{padding:16px 0;border-top:2px solid var(--ink)}
+.find .big{font-variation-settings:"wdth" 70;font-weight:780;font-size:34px;line-height:1;color:var(--palm)}
+.find h3{font-size:17px;margin:8px 0 4px}
+.find p{margin:0;font-size:15px;color:#36434d}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center;background:var(--sand);padding:14px 16px;border-radius:8px;margin-bottom:14px}
+.controls label{display:flex;align-items:center;gap:8px;font-size:14px}
+.controls input[type=range]{width:120px;accent-color:var(--palm)}
+.controls .w{min-width:24px;font-weight:600}
+.controls select,.controls button{font:inherit;font-size:14px;padding:6px 10px;border:1px solid #cfc7b5;border-radius:6px;background:#fff;color:var(--ink);cursor:pointer}
+.controls button:hover{background:#f7f3ea}
+
+/* table */
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th{text-align:left;font-weight:600;font-size:13px;color:var(--slate);padding:8px 10px;border-bottom:2px solid var(--ink)}
+td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.r,th.r{text-align:right}
+.bn{font-weight:650}
+.bn a{text-decoration:none;border-bottom:1px solid #b8c9c1}
+.bn a:hover{border-color:var(--palm)}
+.sub{font-size:13px;color:var(--slate)}
+.flag{color:var(--amber);font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font-size:12.5px;background:var(--palm-l);color:#21463a;border-radius:4px;padding:2px 7px}
+.none{font-size:13px;color:var(--slate)}
+.score{display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.score strong{font-variation-settings:"wdth" 75;font-size:22px;font-weight:780;min-width:30px;text-align:right}
+.meter{width:56px;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--palm)}
+.delta{font-size:12px;font-weight:600;min-width:26px}
+.up{color:var(--palm)}.dn{color:var(--amber)}
+.fund{font-size:13px}
+.fund.quiet{color:var(--slate)}
+.cards{display:none}
+.note{font-size:13.5px;color:var(--slate);margin-top:10px}
+
+/* profiles */
+.profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px}
+.p{padding:20px 0;border-top:1px solid var(--line);scroll-margin-top:16px}
+.p header{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.p h3{font-size:20px;margin:0;font-variation-settings:"wdth" 85}
+.p .ps{font-variation-settings:"wdth" 70;font-weight:780;font-size:28px;color:var(--palm)}
+.p .who{font-size:13.5px;color:var(--slate);margin:2px 0 10px}
+.p dl{margin:0;display:grid;grid-template-columns:76px 1fr;gap:6px 12px;font-size:15px}
+.p dt{font-weight:650}
+.p dd{margin:0;color:#2d3a44}
+.p.bench{background:var(--sand);padding:20px 18px;border-radius:8px;border-top:0}
+
+/* details */
+details{border-top:1px solid var(--line);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:650;font-size:17px}
+summary::marker{color:var(--palm)}
+details table{margin-top:12px}
+details p{font-size:15px;color:#2d3a44;max-width:70ch}
+.method li{margin:6px 0;font-size:15px;max-width:72ch}
+footer{margin-top:48px;padding-top:16px;border-top:2px solid var(--ink);font-size:13px;color:var(--slate);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .by{color:var(--ink);font-weight:600}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:26px}
+  .chartbox{order:-1}
+  .finds,.profiles{grid-template-columns:1fr}
+  .tablewrap{display:none}
+  .cards{display:block}
+  .controls{gap:10px 16px}
+  .controls label{width:100%;justify-content:space-between}
+  .controls input[type=range]{flex:1;width:auto}
+  .card{border-top:1px solid var(--line);padding:14px 0}
+  .card .row1{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .card .rk{font-weight:700;color:var(--slate);margin-right:6px}
+  .card .stats{display:flex;gap:16px;font-size:13.5px;margin:8px 0;color:#2d3a44}
+  .card .stats b{display:block;font-size:16px;color:var(--ink)}
+  .card .fund{margin-top:6px}
+  .p dl{grid-template-columns:1fr;gap:2px}
+  .p dd{margin-bottom:6px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* v3 compact list */
+.list{border-top:2px solid var(--ink)}
+.list details.item{padding:0;border-top:0}
+.item{border-bottom:1px solid var(--line)}
+.item summary{list-style:none;display:grid;grid-template-columns:28px minmax(0,1.1fr) minmax(0,1.6fr) 120px;gap:14px;align-items:center;padding:12px 4px;cursor:pointer;font-weight:400;font-size:15px}
+.item summary::-webkit-details-marker{display:none}
+.item summary:hover{background:#f8f6f0}
+.item .rk{font-weight:700;color:var(--slate)}
+.item .nm{font-weight:650;font-size:16px}
+.item .ct{font-size:13px;color:var(--slate);display:block;font-weight:400}
+.item .why{color:#36434d;font-size:14.5px}
+.item[open] summary{background:#f8f6f0}
+.item .more{padding:4px 4px 16px 46px;font-size:14.5px}
+.item .stats{display:flex;flex-wrap:wrap;gap:6px 22px;margin:4px 0 10px;color:#36434d}
+.item .stats b{color:var(--ink)}
+.item dl{display:grid;grid-template-columns:76px 1fr;gap:4px 12px;margin:10px 0 0;max-width:70ch}
+.item dt{font-weight:650}.item dd{margin:0;color:#2d3a44}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:8px}
+.fact{border-top:2px solid var(--ink);padding-top:12px}
+.fact .big{font-variation-settings:"wdth" 70;font-weight:780;font-size:34px;line-height:1;color:var(--palm)}
+.fact p{margin:8px 0 0;font-size:15px}
+.tune{margin:0 0 12px;border:0;padding:0}
+.tune summary{font-size:14px;font-weight:600;color:var(--palm)}
+.tune[open] .controls{margin-top:10px}
+@media (max-width:760px){
+ .item summary{grid-template-columns:24px 1fr 92px;gap:10px}
+ .item .meter,.item .delta{display:none}
+ .item .why{grid-column:2/4;grid-row:2;font-size:14px;margin-top:-6px}
+ .item .more{padding-left:34px}
+ .item dl{grid-template-columns:1fr}
+ .facts{grid-template-columns:1fr;gap:14px}
+}
+</style>
+<style>
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 6px}
+.tab{font:inherit;font-size:15px;font-weight:600;padding:9px 14px;border:1px solid #cfc7b5;background:#fff;color:var(--ink);border-radius:999px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lensnote{font-size:14px;color:var(--slate);margin:4px 0 14px;min-height:21px}
+.grow{font-size:12.5px;font-weight:600;margin-left:6px}
+.grow.up{color:var(--palm)}.grow.dn{color:var(--amber)}
+.movers{display:none;margin:22px 0 0;padding:14px 16px;background:var(--palm-l);border-radius:8px;font-size:15px}
+.movers b{font-weight:700}
+.memo-btn{font:inherit;font-size:14px;font-weight:600;margin-top:12px;padding:7px 12px;border-radius:6px;border:1px solid var(--palm);background:#fff;color:var(--palm);cursor:pointer}
+.memo-btn:hover{background:var(--palm-l)}
+.memo-tag{font-size:11.5px;font-weight:700;color:var(--palm);border:1px solid var(--palm);border-radius:4px;padding:1px 5px;margin-left:8px;vertical-align:2px}
+dialog{border:0;border-radius:10px;padding:0;max-width:680px;width:calc(100% - 28px);color:var(--ink);box-shadow:0 20px 60px rgba(22,34,44,.25)}
+dialog::backdrop{background:rgba(22,34,44,.45)}
+.memo{padding:28px 30px 26px}
+.memo .mh{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.memo h3{font-variation-settings:"wdth" 80;font-size:26px;margin:0}
+.memo .ms{font-size:14px;color:var(--slate);margin:4px 0 0}
+.memo h4{font-size:15px;margin:18px 0 4px}
+.memo p,.memo li{font-size:15px;margin:0;color:#2d3a44}
+.memo ul{margin:0;padding-left:18px}
+.memo .figs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.memo .figs div{background:var(--sand);border-radius:6px;padding:8px 10px;font-size:13px;color:#36434d}
+.memo .figs b{display:block;font-size:19px;color:var(--ink)}
+.memo .actions{display:flex;gap:8px;margin-top:20px}
+.memo .actions button{font:inherit;font-size:14px;padding:7px 12px;border-radius:6px;border:1px solid #cfc7b5;background:#fff;cursor:pointer}
+.memo .fine{font-size:12.5px;color:var(--slate);margin-top:14px}
+.suggest{margin-top:48px;padding:20px;border:2px solid var(--ink);border-radius:8px}
+.suggest h2{margin:0 0 4px}
+.suggest form{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.suggest input{font:inherit;font-size:15px;padding:9px 11px;border:1px solid #cfc7b5;border-radius:6px;flex:1 1 220px}
+.suggest button{font:inherit;font-size:15px;font-weight:600;padding:9px 16px;border:0;border-radius:6px;background:var(--palm);color:#fff;cursor:pointer}
+@media print{body>*:not(dialog[open]){display:none!important}dialog{box-shadow:none;position:static;max-width:none;width:auto}.memo .actions{display:none}}
+@media (max-width:760px){.memo{padding:22px 18px}.memo .figs{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="dateline" id="dateline">GCC Brand Radar</p>
+  <h1>15 homegrown GCC brands worth a look, ranked</h1>
+  <p class="lede">Beauty, personal care and wellness brands, screened from public data for an HB Investments lens.</p>
+</header>
+
+<section class="hero" aria-label="Summary">
+  <div class="top3">
+    <h3>The three to look at first</h3>
+    <ol id="top3"></ol>
+  </div>
+  <figure class="chartbox" style="margin:0">
+    <svg id="quad" viewBox="0 0 560 420" role="img" aria-labelledby="qt"><title id="qt">Brands plotted by retail reach against social momentum</title></svg>
+    <figcaption>Right: more verified retail. Up: stronger Instagram momentum. Nutrili not plotted (engagement hidden).</figcaption>
+  </figure>
+</section>
+
+<div class="movers" id="movers"></div>
+
+<div class="facts">
+  <div class="fact"><div class="big">+17%</div><p>Haircare is the region's fastest-growing beauty category. 4 of the top 6 sell it, none competes with Huda Beauty.</p></div>
+  <div class="fact"><div class="big">80+ / 0.01%</div><p>MZN: in 80+ stores, 0.01% engagement. Stocked brands with weak social are where a content-led owner adds most.</p></div>
+  <div class="fact"><div class="big">$22.8M</div><p>New specialist consumer fund (Apr 2026). AÏZA has already raised $8M. The window is closing.</p></div>
+</div>
+
+<h2>All 15, ranked</h2>
+<div class="tabs" role="tablist" aria-label="Rank by purpose">
+  <button class="tab" role="tab" data-lens="invest" aria-selected="true">Invest</button>
+  <button class="tab" role="tab" data-lens="acquire" aria-selected="false">Acquire into Huda Beauty</button>
+  <button class="tab" role="tab" data-lens="incubate" aria-selected="false">Incubate (HB Angels)</button>
+</div>
+<p class="lensnote" id="lensnote"></p>
+<div class="list" id="list"></div>
+<p class="note">Tap a brand for its numbers. The top five on the Invest view have a one-page memo.</p>
+
+<section class="suggest">
+  <h2>Know a brand that should be here?</h2>
+  <p class="intro" style="margin:0">Send its Instagram handle. It gets scored and added in the next weekly refresh.</p>
+  <form name="suggest-brand" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?sent=1">
+    <input type="hidden" name="form-name" value="suggest-brand">
+    <p hidden><label>Leave empty <input name="bot-field"></label></p>
+    <input name="handle" required placeholder="@brandhandle" aria-label="Instagram handle">
+    <input name="note" placeholder="Why it's interesting (optional)" aria-label="Note">
+    <button type="submit">Suggest brand</button>
+  </form>
+</section>
+
+<h2>More detail</h2>
+<details>
+  <summary>15 makeup and fragrance brands, not ranked</summary>
+  <p>They compete with Huda Beauty's core, so they are shown for context only.</p>
+  <div style="overflow-x:auto"><table><thead><tr><th>Brand</th><th>Country</th><th>Category</th><th class="r">Followers</th><th class="r">Engagement</th><th>Where it sells</th></tr></thead><tbody id="comp"></tbody></table></div>
+</details>
+<details>
+  <summary>17 brands reviewed but not scored</summary>
+  <p><b>Quiet on Instagram for 14+ months:</b> Souffle Beauty, Yaskin Natural, KOY'.</p>
+  <p><b>No verified Instagram:</b> Skin Story, Peacefull, JUANA, Kamira, IFMNS, Botanical Bliss, Luna, Dinaia, Glowell, Diggin'It, By Fouz.</p>
+  <p><b>Out of scope:</b> Qaadu, Antati, Humantra and Ketish (already HBI).</p>
+</details>
+<details>
+  <summary>How the score works</summary>
+  <ul class="method">
+    <li><b>Four signals,</b> each scored 0 to 100: momentum (median engagement on the latest 12 posts, posting cadence, audience size), retail (verified GCC retailers and stockists, bonus for more than one country), HBI fit (outside Huda Beauty's makeup and fragrance core, female founder, GCC-born, no overlap with current holdings), and still unpriced (no disclosed round scores highest, a Series A lowest).</li>
+    <li><b>Invest</b> weights them 30 / 30 / 25 / 15. <b>Acquire</b> weights retail 45, audience size 25, fit 30. <b>Incubate</b> weights momentum 30, fit 35, unpriced 35, and ignores retail.</li>
+    <li><b>Weekly refresh:</b> followers and post counts are re-scraped every Monday. Growth is shown against the 16 November baseline. Engagement stays at the baseline reading.</li>
+    <li><b>Limits:</b> paid ads can lift likes. "Not disclosed" does not mean unfunded. Retail lists come from public sources and may be incomplete.</li>
+  </ul>
+</details>
+
+<footer>
+  <span class="by">Prepared by Vedant Jain</span>
+  <span>Public sources: brand Instagram accounts, Wamda, BeautyMatter, Gulf Business, Arab News, Images RetailME, retailer listings. Not affiliated with HB Investments or Huda Beauty.</span>
+</footer>
+</div>
+
+<dialog id="memo" aria-labelledby="memo-title"><div class="memo" id="memobody"></div></dialog>
+
+<script>
+const D={"B": [{"name": "Zaphira Nature", "country": "UAE", "cat": "Haircare", "founder": "Hanane Bouchouicha-Sykora", "female": true, "founded": 2024, "handle": "zaphiranaturecurl", "retail": ["GlowTerra", "Locks by Loulou", "Curlnation (Kuwait)", "UAE salon network"], "multi": true, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Curl and textured-hair care built for GCC heat and hard water. Salon-first: stocks salons with no upfront cost. Entered Kuwait, and Saudi Arabia in Oct 2026.", "m": 0.529, "fol": 5255, "er": 0.65, "ppm": 1.8, "last": 4, "r": 1, "f": 1.0, "a": 1.0, "score": 86}, {"name": "MZN Bodycare", "country": "KSA", "cat": "Body care", "founder": "Muzon Ashgar", "female": true, "founded": 2015, "handle": "mznbodycare", "retail": ["80+ retail partners", "Faces", "Pharmacy chains", "Spas and hotels"], "multi": true, "funding": "None disclosed (PIF MUSAHAMA local-content programme)", "avail": 1.0, "overlap": false, "note": "Natural, vegan body care made in female-only micro-factories in Dammam. Older than the 2018 cut-off, kept because of its retail reach.", "m": 0.235, "fol": 42542, "er": 0.01, "ppm": 2.2, "last": 0, "r": 1, "f": 1.0, "a": 1.0, "score": 77}, {"name": "Nutrili", "country": "UAE", "cat": "Wellness", "founder": "Nour Antabli", "female": true, "founded": 2022, "handle": "nutrili.me", "fol_override": 22254, "retail": ["Ounass (UAE, Qatar, Bahrain)", "Spinneys", "Avnzor"], "multi": true, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Gummy vitamins and marine collagen. 20,000+ customers, ships to 15 countries. Founder on Gulf Business 30 Under 30 (Oct 2026).", "m": 0.123, "fol": 22254, "er": null, "ppm": null, "last": null, "r": 1, "f": 1.0, "a": 1.0, "score": 74}, {"name": "Passion Labs", "country": "UAE", "cat": "Skin + hair", "founder": "Eman (chemist, per brand Instagram)", "female": true, "founded": null, "handle": "passionlabs.shop", "retail": ["GlowTerra"], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Arabic-first natural skin, hair and soap range, made in the UAE. Named a top homegrown performer in GlowTerra's 2025 clean beauty report.", "m": 0.492, "fol": 21874, "er": 0.54, "ppm": 3.1, "last": 18, "r": 0.4, "f": 1.0, "a": 1.0, "score": 67}, {"name": "Gaudia Beauty", "country": "UAE / KSA", "cat": "Haircare", "founder": "Laurene Joie", "female": true, "founded": 2024, "handle": "gaudiabeauty", "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Dates-infused scalp and hair treatments. Just launched a travel-size Mini Set (Oct 2026). Retail not verified.", "m": 0.828, "fol": 2934, "er": 0.8, "ppm": 8.7, "last": 32, "r": 0, "f": 1.0, "a": 1.0, "score": 65}, {"name": "AÏZA (Amaani)", "country": "UAE", "cat": "Skin + hair", "founder": "Shubham Poddar", "female": false, "founded": 2024, "handle": "aiza.global", "retail": ["Ulta Beauty ME", "Ounass"], "multi": true, "funding": "Series A, $8M total (BECO, Homegrown Ventures, Peak XV Surge)", "avail": 0.2, "overlap": false, "note": "Benchmark. Top-10 brand in Ulta ME's 300+ assortment; net revenue up 9x year on year in H1 2026. Priced and well funded.", "m": 0.526, "fol": 28523, "er": 0.14, "ppm": 8.4, "last": -1, "r": 0.7999999999999999, "f": 0.8, "a": 0.2, "score": 63}, {"name": "3 of Cups", "country": "UAE", "cat": "Skincare", "founder": "Lauren O'Connell", "female": true, "founded": null, "handle": "unlock3ofcups", "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Single-hero product: an in-shower face mask. Very early, tiny audience, high engagement on a small base.", "m": 0.658, "fol": 585, "er": 3.16, "ppm": 20.8, "last": -1, "r": 0, "f": 1.0, "a": 1.0, "score": 60}, {"name": "Shake Your Plants", "country": "UAE", "cat": "Wellness", "founder": "Justine Dampt and Lia Coelho", "female": true, "founded": 2022, "handle": null, "retail": ["Spinneys incubator", "Powder Beauty", "Organic Foods & Cafe"], "multi": true, "funding": "Shark Tank: AED 1.2M for 20% (Amira Sajwani)", "avail": 0.66, "overlap": true, "note": "Plant-based drink sticks (kombucha, electrolytes). Overlaps HBI's Humantra on hydration. Instagram not scraped.", "m": 0.0, "fol": null, "er": null, "ppm": null, "last": null, "r": 1, "f": 0.8, "a": 0.66, "score": 60}, {"name": "MUSC", "country": "UAE", "cat": "Body care", "founder": "Not disclosed", "female": null, "founded": 2024, "handle": "musc.ae", "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Small-batch body scrubs, polishes and oils. Bio signals a relaunch is coming.", "m": 0.629, "fol": 1361, "er": 0.84, "ppm": 12.2, "last": 5, "r": 0, "f": 0.8, "a": 1.0, "score": 54}, {"name": "Yome Natural Care", "country": "Oman", "cat": "Skincare", "founder": "Sama Al Mahruqi", "female": true, "founded": 2019, "handle": "yomecare", "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Omani-ingredient skincare. Large local following, low engagement.", "m": 0.25, "fol": 27353, "er": 0.05, "ppm": 2.8, "last": 2, "r": 0, "f": 1.0, "a": 1.0, "score": 48}, {"name": "Delile", "country": "KSA", "cat": "Haircare", "founder": "Ahad Albarrak", "female": true, "founded": null, "handle": "delile.sa", "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Certified haircare known for long-lasting scent. Founder quoted on scalp-care demand in Saudi Arabia.", "m": 0.258, "fol": 7096, "er": 0.1, "ppm": 3.7, "last": 12, "r": 0, "f": 1.0, "a": 1.0, "score": 48}, {"name": "Forus", "country": "UAE", "cat": "Wellness", "founder": "Dave Catudal (co-founder)", "female": false, "founded": null, "handle": "forus.supplements", "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Recovery and longevity supplements. Likes hidden on Instagram, so engagement cannot be read.", "m": 0.323, "fol": 26442, "er": null, "ppm": 7.5, "last": -1, "r": 0, "f": 0.8, "a": 1.0, "score": 45}, {"name": "Mariam Em", "country": "UAE", "cat": "Skin + hair + body", "founder": "Mariam Almazrouei", "female": true, "founded": 2022, "handle": "mariamem.ae", "fol_override": 5782, "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": false, "note": "Emirati founder; sidr-based rituals. Featured in Vogue and Marie Claire. Engagement not scraped.", "m": 0.107, "fol": 5782, "er": null, "ppm": null, "last": null, "r": 0, "f": 1.0, "a": 1.0, "score": 43}, {"name": "oneshot", "country": "UAE", "cat": "Wellness", "founder": "Not confirmed", "female": null, "founded": null, "handle": "oneshot.me", "retail": [], "multi": false, "funding": "None disclosed", "avail": 1.0, "overlap": true, "note": "Sugar-free electrolytes. Direct overlap with HBI's Humantra.", "m": 0.369, "fol": 10171, "er": 0.51, "ppm": 0.9, "last": 9, "r": 0, "f": 0.6, "a": 1.0, "score": 41}, {"name": "De L'Arta", "country": "UAE", "cat": "Skincare", "founder": "Team incl. Dr Lina Yousef", "female": true, "founded": 2019, "handle": "de_larta", "retail": [], "multi": false, "funding": "Seed (Catalyst); Chalhoub incubator alumnus", "avail": 0.5, "overlap": false, "note": "Skincare from native UAE plants. Posting has slowed to under one post a month.", "m": 0.102, "fol": 4076, "er": null, "ppm": 0.4, "last": 31, "r": 0, "f": 1.0, "a": 0.5, "score": 36}], "C": [{"name": "Moonglaze", "country": "KSA", "cat": "Makeup", "handle": "moonglaze", "retail": "Sephora ME (all GCC), Selfridges", "fol": 146024, "er": 0.71, "ppm": 18.8}, {"name": "Rosemin Beauty", "country": "UAE", "cat": "Makeup", "handle": "shoproseminbeauty", "retail": "Ulta Beauty ME (GCC incl. Qatar)", "fol": 11253, "er": 5.37, "ppm": 10.0}, {"name": "Nadine Njeim Beauty", "country": "Lebanon / GCC", "cat": "Makeup", "handle": "nadine.njeim.beauty", "retail": "Ulta Beauty ME (exclusive offline)", "fol": 397128, "er": 0.14, "ppm": 26.7}, {"name": "Vimi Joshi Beauty", "country": "UAE", "cat": "Makeup", "handle": "vimijoshi", "retail": "Ulta Beauty ME", "fol": 115635, "er": 0.06, "ppm": 7.7}, {"name": "Asteri Beauty", "country": "KSA", "cat": "Makeup + skin", "handle": null, "fol": 59991, "retail": "Ulta Beauty ME; self-funded; B Corp", "er": null, "ppm": null}, {"name": "Hindash Cosmetics", "country": "UAE", "cat": "Makeup", "handle": "hindashcosmetics", "retail": "DTC", "fol": 27499, "er": 0.24, "ppm": 12.0}, {"name": "Noha Nabil Beauty", "country": "Kuwait", "cat": "Makeup", "handle": "nohanabilbeauty", "retail": "DTC, Faces", "fol": 216610, "er": 0.08, "ppm": 21.0}, {"name": "Bex Beauty", "country": "UAE", "cat": "Makeup", "handle": "bexbeautyofficial", "retail": "Faces, Ulta Beauty ME, Paris Gallery", "fol": 186145, "er": null, "ppm": 30.0}, {"name": "Glossic", "country": "UAE", "cat": "Makeup + body", "handle": "glossicofficial", "retail": "Nysaa, GlowTerra, Amazon.ae, Namshi", "fol": 87838, "er": null, "ppm": 30.0}, {"name": "Barkha Beauty", "country": "UAE", "cat": "Lip makeup", "handle": "barkhabeauty", "retail": "H&M Beauty, Nysaa", "fol": 65291, "er": null, "ppm": 16.7}, {"name": "Mraya", "country": "KSA", "cat": "Skin-led makeup", "handle": "mrayabeauty", "retail": "Boutiqaat, Be Your Ray", "fol": 8463, "er": 0.25, "ppm": 11.8}, {"name": "Miimz", "country": "KSA", "cat": "Lip and cheek tint", "handle": "miimzcosmetics", "retail": "DTC", "fol": 7662, "er": 0.08, "ppm": 1.5}, {"name": "Youmi Beauty", "country": "UAE", "cat": "Lenses, lashes, hair", "handle": "youmibeauty", "retail": "DTC; revenue $2.7M in 2024", "fol": 728012, "er": 0.04, "ppm": 60.0}, {"name": "By Mina Al Sheikhly", "country": "UAE", "cat": "Makeup", "handle": "byminaalsheikhly", "retail": "DTC", "fol": 269594, "er": 0.02, "ppm": 26.2}, {"name": "Arcadia by Amna", "country": "UAE", "cat": "Fragrance", "handle": "arcadiabyamna", "retail": "DTC, Dar Wasl", "fol": 17574, "er": 0.18, "ppm": 2.2}], "P": {"Zaphira Nature": ["Saudi launch in Oct 2026 and Kuwait via Curlnation, on top of a UAE salon network that stocks the range with no upfront cost.", "0.65% median engagement on 5.3K followers, plus 4 verified retail and salon partners across 3 markets.", "Small audience. Salon distribution builds trust but scales slowly. Curly and textured hair is a focused niche."], "MZN Bodycare": ["Distribution is already built: 80+ retail partners, Faces and pharmacy chains. Social is the weak link, which is where a creator-led owner adds most.", "42.5K followers but 0.01% median engagement (about 6 interactions per post).", "Founded 2015, so not a young brand. Handmade production may cap volume. Value positioning."], "Nutrili": ["Just moved from online-only to shelves (Spinneys) and sells on Ounass in 3 markets.", "20,000+ customers and shipping to 15 countries, from a 2022 start.", "Supplement rules differ by market. A second brand can split focus. Engagement not measured."], "Passion Labs": ["A chemist-founder, Arabic-first brand with a real community around natural skin, hair and soap.", "0.54% median engagement on 21.9K followers.", "Only one verified retailer. Little public information on the founder or the business."], "Gaudia Beauty": ["Launched a travel-size Mini Set in Oct 2026, in the fastest-growing category in the region.", "Highest momentum score on the list: 0.8% median engagement and about 9 posts a month.", "No verified retail. 2.9K followers, so very early."], "AÏZA (Amaani)": ["Benchmark, not a target: Ulta ME top-10 brand within a year, net revenue up 9x+ year on year in H1 2026.", "$8M raised; Series A led by BECO in Sep 2026.", "Already priced by specialist funds. HBI would be a follower, not a lead."], "3 of Cups": ["Watchlist. One hero product with a clear hook (a face mask you use in the shower).", "3.2% median engagement, but on only 585 followers.", "Too early to judge. One product."], "Shake Your Plants": ["On shelves through the Spinneys incubator and Powder Beauty, with a Shark Tank deal behind it.", "AED 1.2M for 20% from Amira Sajwani (Jun 2025), implying about AED 6M post-money.", "Overlaps Humantra on hydration. Could be a bolt-on or a conflict: an HBI call."]}, "W": {"Zaphira Nature": "Curl care in salons across 3 markets, real engagement", "MZN Bodycare": "80+ stockists, weak social: content upside", "Nutrili": "On Ounass and Spinneys, 20K+ customers", "Passion Labs": "Chemist-founded, strong community, one retailer", "Gaudia Beauty": "Best momentum, not yet in retail", "AÏZA (Amaani)": "Benchmark: Ulta ME top 10, already Series A", "3 of Cups": "One hero product, too early", "Shake Your Plants": "On shelf, Shark Tank-backed, <span class=\"flag\">overlaps Humantra</span>", "MUSC": "Active posting, relaunch coming", "Yome Natural Care": "Omani skincare, big following, low engagement", "Delile": "Saudi haircare, no verified retail", "Forus": "Recovery supplements, likes hidden", "Mariam Em": "Emirati sidr rituals, small and early", "oneshot": "Electrolytes, <span class=\"flag\">overlaps Humantra</span>", "De L'Arta": "Native-plant skincare, posting has slowed"}, "T": {"Zaphira Nature": "Curl care in salons across the UAE, Kuwait and Saudi Arabia. Real engagement.", "MZN Bodycare": "80+ retail partners, weak social. Content upside.", "Nutrili": "Now on Spinneys and Ounass. 20,000+ customers."}, "M": {"Zaphira Nature": {"thesis": "A salon-led curl and textured-hair brand built for Gulf heat and hard water. It has already moved from the UAE into Kuwait and, in October 2026, Saudi Arabia.", "why": "Haircare sits outside Huda Beauty's core and is the region's fastest-growing beauty category. A female founder fits the HB Angels mandate. Salons give it trust; HBI could add the content reach salons cannot.", "risks": ["Curly and textured hair is a focused niche, so the addressable market needs sizing.", "Salon distribution builds slowly and depends on stylist goodwill.", "A 5.3K Instagram audience is small for a three-market brand."], "q": ["What is the revenue split across salons, retail and online?", "How often do salons reorder, and what is sell-through per salon?", "What are the terms of the Saudi launch partner?", "What is gross margin after salon consignment?"]}, "MZN Bodycare": {"thesis": "Saudi natural body care with distribution most young brands would envy: 80+ retail partners, Faces and pharmacy chains. Its social presence lags far behind its shelf presence.", "why": "The gap between shelf and screen is exactly where a creator-led owner adds value. Saudi-made production also fits local-content tailwinds. The founder is female and the category does not overlap Huda Beauty.", "risks": ["Founded in 2015, so it is not a young brand. Growth may have plateaued.", "Handmade, micro-factory production may cap volume.", "Value price points leave less room for marketing spend."], "q": ["What is sell-through per door, and how concentrated are sales in the top 10 doors?", "What is the production capacity ceiling today?", "How do margins differ between Faces, pharmacies and online?", "What has been tried on social so far, and what worked?"]}, "Nutrili": {"thesis": "Beauty-from-within supplements (gummy vitamins, marine collagen) that have just moved from online-only to shelves at Spinneys, and sell on Ounass in three markets.", "why": "Wellness is a natural neighbour to beauty. It complements HBI's Humantra (hydration) without overlapping it. A female founder with 20,000+ customers across 15 countries is a proven seller.", "risks": ["Supplement rules differ by GCC market and slow expansion.", "A second brand (JUST Snacks) can split founder focus.", "Instagram engagement could not be read, so momentum is unproven here."], "q": ["What is the repeat purchase rate, and how much revenue is subscription?", "What does it cost to acquire a customer online today?", "Which market approvals are in hand, and which are pending?", "How is time split between Nutrili and JUST Snacks?"]}, "Passion Labs": {"thesis": "An Arabic-first, chemist-founded natural skin, hair and soap brand, made in the UAE, with a real community around it.", "why": "Its 0.54% engagement on 21.9K followers is the second-best momentum among brands of its size. It speaks to an Arabic-speaking audience Huda Beauty knows well, and no outside money is disclosed.", "risks": ["Only one verified retailer, so it depends on direct sales.", "Little public information on the founder, team or revenue.", "The natural-care space is crowded with small local makers."], "q": ["What are revenue and repeat rates today?", "How is production set up, and can it scale?", "What are the founder's ambitions: regional brand or local favourite?", "Which retailers have approached it?"]}, "Gaudia Beauty": {"thesis": "Dates-infused scalp and hair treatments, launched in 2024, with the strongest momentum on the list and a new travel-size Mini Set (October 2026).", "why": "A classic HB Angels profile: very early, female founder, heritage ingredient, fastest-growing category, no outside money. Small enough that HBI support would matter.", "risks": ["No verified retail yet.", "A 2.9K audience means strong engagement may not hold at scale.", "Single-founder bandwidth."], "q": ["What are sales to date, and through which channels?", "Which retailers are in the pipeline?", "Where is it manufactured, and at what minimum order size?", "How much capital does the next 12 months need, and for what?"]}}, "H": [{"date": "2026-11-16", "label": "16 Nov", "f": {"zaphiranaturecurl": 5255, "mznbodycare": 42542, "nutrili.me": 22254, "passionlabs.shop": 21874, "gaudiabeauty": 2934, "aiza.global": 28523, "unlock3ofcups": 585, "musc.ae": 1361, "yomecare": 27353, "delile.sa": 7096, "forus.supplements": 26442, "mariamem.ae": 5782, "oneshot.me": 10171, "de_larta": 4076}}]};
+const fmt=n=>n==null?'n/a':n>=1000?(n/1000).toFixed(n>=100000?0:1)+'K':String(n);
+const pct=e=>e==null?'n/a':e.toFixed(2)+'%';
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+const el=id=>document.getElementById(id);
+const reach=b=>b.fol?Math.min(1,Math.log10(b.fol)/6):0;
+const LENS={
+ invest:{w:b=>.30*b.m+.30*b.r+.25*b.f+.15*b.a,note:"Taking a minority stake: momentum and retail first, then fit and how unpriced the brand still is."},
+ acquire:{w:b=>.45*b.r+.25*reach(b)+.30*b.f,note:"Adding a brand to the Huda Beauty group: proven retail and audience in a category Huda Beauty doesn't sell."},
+ incubate:{w:b=>.30*b.m+.35*b.f+.35*b.a,note:"Backing an early founder through HB Angels: momentum, female-founder fit, and no outside money yet. Retail is ignored."}
+};
+const fundTxt=f=>/^None disclosed$/.test(f)?'Not disclosed':f;
+const retail=b=>b.retail.length?`<div class="chips">${b.retail.map(r=>`<span class="chip">${r}</span>`).join('')}</div>`:'<span class="none">Retail not verified</span>';
+const H=D.H||[];const base=H[0]||{};const last=H[H.length-1]||{};
+const firstWith=h=>H.find(s=>s.f&&s.f[h]);
+const growth=b=>{const h=b.handle;if(!h||H.length<2)return null;const s0=firstWith(h);if(!s0||s0===last||!last.f[h])return null;return 100*(last.f[h]-s0.f[h])/s0.f[h]};
+const growHtml=b=>{const g=growth(b);if(g==null)return'';return `<span class="grow ${g>=0?'up':'dn'}">${g>=0?'+':''}${g.toFixed(1)}% since ${firstWith(b.handle).label}</span>`};
+const scoreOf=(b,l)=>Math.round(100*LENS[l].w(b));
+const order=l=>[...D.B].map(b=>({...b,s:scoreOf(b,l)})).sort((x,y)=>y.s-x.s);
+const INV=order('invest');const invRank=Object.fromEntries(INV.map((b,i)=>[b.name,i+1]));
+const MEMO=new Set(INV.slice(0,5).map(b=>b.name).filter(n=>D.M[n]));
+el('dateline').textContent=`GCC Brand Radar, updated ${last.label||'16 Nov 2026'}`;
+let lens='invest';
+function render(){
+  el('lensnote').textContent=LENS[lens].note;
+  const rows=order(lens);
+  const delta=(b,i)=>{if(lens==='invest')return'<span class="delta"></span>';const d=invRank[b.name]-(i+1);return d>0?`<span class="delta up">▲${d}</span>`:d<0?`<span class="delta dn">▼${-d}</span>`:'<span class="delta"></span>'};
+  el('list').innerHTML=rows.map((b,i)=>{const p=D.P[b.name];return `<details class="item" id="p-${slug(b.name)}"><summary>
+   <span class="rk num">${i+1}</span><span><span class="nm">${b.name}</span>${MEMO.has(b.name)?'<span class="memo-tag">Memo</span>':''}<span class="ct">${b.cat}, ${b.country}</span></span>
+   <span class="why">${D.W[b.name]||''}</span>
+   <div class="score">${delta(b,i)}<strong class="num">${b.s}</strong><span class="meter"><i style="width:${b.s}%"></i></span></div></summary>
+   <div class="more"><div class="stats num"><span><b>${fmt(b.fol)}</b> followers${growHtml(b)}</span><span><b>${pct(b.er)}</b> engagement</span><span><b>${b.ppm??'n/a'}</b> posts a month</span><span>Funding: <b>${fundTxt(b.funding)}</b></span></div>
+   ${retail(b)}
+   ${p?`<dl><dt>Why now</dt><dd>${p[0]}</dd><dt>Signal</dt><dd>${p[1]}</dd><dt>Risk</dt><dd>${p[2]}</dd></dl>`:''}
+   ${MEMO.has(b.name)?`<button class="memo-btn" data-memo="${b.name}">Read the one-page memo</button>`:''}</div></details>`}).join('');
+}
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{lens=t.dataset.lens;document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===t));render()}));
+render();
+
+// memo
+function openMemo(name){const b=INV.find(x=>x.name===name);const m=D.M[name];
+ el('memobody').innerHTML=`<div class="mh"><div><h3 id="memo-title">${name}</h3><p class="ms">${b.cat}, ${b.country}. Founded by ${b.founder}${b.founded?', '+b.founded:''}.</p></div><strong class="num" style="font-variation-settings:'wdth' 70;font-size:34px;color:var(--palm)">${b.s}</strong></div>
+ <div class="figs num"><div><b>${fmt(b.fol)}</b>Instagram followers</div><div><b>${pct(b.er)}</b>median engagement</div><div><b>${b.retail.length||'None'}</b>verified retail channels</div></div>
+ <h4>Thesis</h4><p>${m.thesis}</p>
+ <h4>Why HBI</h4><p>${m.why}</p>
+ <h4>Risks</h4><ul>${m.risks.map(r=>`<li>${r}</li>`).join('')}</ul>
+ <h4>First questions for the founder</h4><ul>${m.q.map(r=>`<li>${r}</li>`).join('')}</ul>
+ <p class="fine">Public data only, snapshot ${base.label||'16 Nov 2026'}. A starting point for a first call, not diligence.</p>
+ <div class="actions"><button onclick="window.print()">Print or save as PDF</button><button onclick="document.getElementById('memo').close()">Close</button></div>`;
+ el('memo').showModal();}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-memo]');if(t)openMemo(t.dataset.memo)});
+el('memo').addEventListener('click',e=>{if(e.target===el('memo'))el('memo').close()});
+
+// movers
+(function(){if(H.length<2)return;const g=D.B.map(b=>({n:b.name,g:growth(b)})).filter(x=>x.g!=null).sort((a,b)=>b.g-a.g).slice(0,3);
+ el('movers').style.display='block';el('movers').innerHTML=`<b>Movers since ${base.label}:</b> ${g.map(x=>`${x.n} ${x.g>=0?'+':''}${x.g.toFixed(1)}%`).join(', ')} (Instagram followers). Next refresh: Monday.`})();
+
+// top three
+el('top3').innerHTML=INV.slice(0,3).map(b=>`<li><span class="sc num">${b.s}</span><div><b><a href="#p-${slug(b.name)}" onclick="document.getElementById('p-${slug(b.name)}').open=true" style="text-decoration:none">${b.name}</a></b><span>${D.T[b.name]||''}</span></div></li>`).join('');
+
+// quadrant chart
+(function(){
+  const W=560,H=440,L=46,R=20,T=44,B=40,pw=W-L-R,ph=H-T-B;
+  const pts=D.B.filter(b=>b.er!=null);
+  const top=new Set(INV.slice(0,3).map(b=>b.name));
+  const X=r=>L+pw*(0.07+0.86*r),Y=m=>T+ph*(1-0.06-0.88*Math.min(1,m));
+  const xs=0.5,ys=0.45;
+  // label offsets [dx,dy,anchor]; dot nudges [nx,ny]
+  const LB={"Zaphira Nature":[-10,-12,"end"],"AÏZA (Amaani)":[-10,4,"end"],"MZN Bodycare":[-10,4,"end"],"Passion Labs":[10,4,"start"],"Gaudia Beauty":[10,4,"start"],"3 of Cups":[10,0,"start"],"MUSC":[10,10,"start"],"oneshot":[10,4,"start"],"Yome Natural Care":[22,-6,"start"],"Delile":[10,14,"start"]};
+  const NUDGE={"Delile":[12,0],"MUSC":[12,4]};
+  let s=`<text class="q-label q-good" x="${L+pw}" y="${T-12}" text-anchor="end">Ready to scale</text>`;
+  s+=`<text class="q-label" x="${L}" y="${T-12}">Loved, not yet stocked</text>`;
+  s+=`<rect x="${L}" y="${T}" width="${pw}" height="${ph}" fill="#fff" stroke="#e3e0d8"/>`;
+  s+=`<rect x="${X(xs)}" y="${T}" width="${L+pw-X(xs)}" height="${Y(ys)-T}" fill="#dfe9e4" opacity=".6"/>`;
+  s+=`<line x1="${X(xs)}" x2="${X(xs)}" y1="${T}" y2="${T+ph}" stroke="#cfc7b5" stroke-dasharray="4 4"/><line x1="${L}" x2="${L+pw}" y1="${Y(ys)}" y2="${Y(ys)}" stroke="#cfc7b5" stroke-dasharray="4 4"/>`;
+  s+=`<text class="q-label" x="${L+pw-8}" y="${T+ph-10}" text-anchor="end">Stocked, under-marketed</text>`;
+  s+=`<text class="q-label" x="${L+8}" y="${T+ph-10}">Too early to call</text>`;
+  s+=`<text x="${L+pw/2}" y="${H-8}" text-anchor="middle" font-size="13" fill="#5d6670">Verified retail reach</text>`;
+  s+=`<text transform="translate(14 ${T+ph/2}) rotate(-90)" text-anchor="middle" font-size="13" fill="#5d6670">Instagram momentum</text>`;
+  pts.forEach(b=>{const n=NUDGE[b.name]||[0,0];const x=X(b.r)+n[0],y=Y(b.m)+n[1];const t=top.has(b.name);
+    const l=LB[b.name]||[10,4,'start'];
+    s+=`<circle class="dot ${t?'top':''}" cx="${x}" cy="${y}" r="${t?7:5}"><title>${b.name}: retail ${Math.round(b.r*100)}, momentum ${Math.round(b.m*100)}</title></circle>`;
+    s+=`<text class="dlabel" x="${x+l[0]}" y="${y+l[1]}" text-anchor="${l[2]}">${b.name.replace(' (Amaani)','').replace(' Natural Care','')}</text>`;});
+  el('quad').setAttribute('viewBox',`0 0 ${W} ${H}`);
+  el('quad').insertAdjacentHTML('beforeend',s);
+})();
+
+
+
+// competitors
+el('comp').innerHTML=[...D.C].sort((x,y)=>(y.fol||0)-(x.fol||0)).map(c=>`<tr><td class="bn">${c.name}</td><td>${c.country}</td><td>${c.cat}</td><td class="r num">${fmt(c.fol)}</td><td class="r num">${pct(c.er)}</td><td class="sub">${c.retail}</td></tr>`).join('');
+</script>
+</body>
+</html>
